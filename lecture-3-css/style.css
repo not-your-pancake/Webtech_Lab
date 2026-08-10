@@ -1,0 +1,13 @@
+table, th, td {
+  border: 1px solid black;Optional: prevents double borders
+  text-align: left;
+  padding: 10px;
+}
+
+.p1 {
+    background-color: #9292fa;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
