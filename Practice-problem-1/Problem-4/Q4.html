@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Profile</title>
+    <style>
+        table, th, td{
+            border: 1px solid rgb(203, 120, 101);
+            background-color: rgb(89, 73, 119);
+            color: white;
+        }
+
+        .pf{
+            /* align-items: center; */
+            display: flex;
+            justify-content: center;
+        }
+
+        body{
+            background-color: rgb(185, 236, 202);
+        }
+
+        .info{
+            font-size: 20px;
+            font-family: 'Helvetica';
+        }
+
+        .link{
+            color: blue;
+        }
+
+        .link:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- 
+    A university wants a webpage to display a student’s profile. The page should contain the 
+    student’sphoto, 
+    name, 
+    ID, 
+    department, 
+    short biography, 
+    educational qualifications, 
+    skills, and 
+    contact information.   
+-->
+
+<h1>student’s Details: </h1>
+
+
+<div class = "pf">
+    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="student's photo" width="200" height="200">
+</div>
+
+<p class = "info">
+    <b>Name: </b> KHalid hasan <br>
+    <b>ID: </b> 23549009015 <br>
+    <b>department: </b> ICT <br>
+    <b>Bio: </b> <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Error modi temporibus nesciunt, nisi sequi magni sint eum qui? Quis, nisi.
+
+</p>
+
+<p>
+    <table>
+        <tr> <th>Level</th> <th>Institution </th> <th>Result </th> </tr>
+        <tr> <td>SSC</td> <td>Dhaka High School</td> <td>GPA 5.00</td> </tr>
+        <tr> <td>HSC</td> <td>Dhaka College</td> <td>GPA 4.90</td> </tr>
+        <tr> <td>BSc</td> <td>Bangladesh University</td> <td>GPA 3.90</td> </tr>
+    </table>
+</p>
+
+<p>
+    <b>Skills: </b> 
+    <ul>
+        <li>Python</li>
+        <li>Competitive Programming</li>
+        <li>C++</li>
+    </ul>
+    
+</p>
+
+<p>
+    <b>Contact Information: </b> <br>
+    Email: <a class ="link " href="mailto:khalidhasan@gmail.com"> khalid.hasan@example.com </a> <br>
+    FaceBook: <a class="link" href="https://www.facebook.com/khalidhasan">  Khalid Hasan </a> <br>
+    Phone: +8801234567890
+</p>
+
+</body>
+</html>

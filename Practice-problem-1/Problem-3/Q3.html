@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Page</title>
+
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(122, 180, 230);
+        margin: auto;
+        padding: 5%;
+        align-items: padding 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Student Registration Form</h1>
+    <form>
+      <label for="username"> Full Name: </label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter Full Name"
+      />
+
+      <label for="ID"> Student ID: </label>
+      <input type="text" name="id" id="id" placeholder="B123" />
+
+      <label for="email"> Email: </label>
+      <input
+        type="email"
+        name="mail"
+        id="email"
+        placeholder="email@gmail.com"
+      />
+
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+      />
+      <!-- 
+      <label for="dob"> Date of Birth:</label>
+      <input type="date" name="dob" id="dob" />
+
+      <label for="gender"> Gender: </label>
+
+      <label for="male">Male: </label>
+      <input type="radio" name="male" id="male" />
+
+      <label for="female">Female:</label>
+      <input type="radio" name="female" id="female"> -->
+
+      <!-- Gender Selection Group -->
+      <div class="form-group">
+        <label class="group-label">Gender</label>
+
+        <div class="radio-options">
+          <!-- Option 1: Male -->
+          <label for="gender-male">
+            <input
+              type="radio"
+              id="gender-male"
+              name="student_gender"
+              value="male"
+            />
+            Male
+          </label>
+
+          <!-- Option 2: Female -->
+          <label for="gender-female">
+            <input
+              type="radio"
+              id="gender-female"
+              name="student_gender"
+              value="female"
+            />
+            Female
+          </label>
+
+          <!-- Option 3: Other -->
+          <label for="other">
+            <input type="radio" id="other" name="other" value="other" />
+            Other
+          </label>
+        </div>
+      </div>
+
+      <label for="dept">Department: </label>
+      <input type="text" name="dept" id="dept" placeholder="CSE/ICT" />
+
+      <label for="prog"> Programming Language Known: </label>
+      <input type="text" name="prog" id="prog" placeholder="C, C++, P, R " />
+
+      <label for="address">Address: </label>
+      <input
+        type="text"
+        name="address"
+        id="address"
+        placeholder="savar, Dhaka"
+      />
+
+      <label for="parti">Participation Type </label>
+      <label for="parti">
+        <input type="radio" name="CTF" id="parti" value="ctf" />
+        CTF
+      </label>
+
+      <!-- <label for="parti">Participation Type </label> -->
+      <label for="parti">
+        <input type="radio" name="CTF" id="parti" value="ctf" />
+        CTF
+      </label>
+
+      <!-- <label for="parti">Participation Type </label> -->
+      <label for="parti">
+        <input type="radio" name="CTF" id="parti" value="ctf" />
+        CTF
+      </label>
+      <br />
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          justify-content: space-evenly;
+        "
+      >
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+    <br />
+    git init <br />
+    git add README.md <br />
+    git commit -m "first commit" <br />
+    git branch -M main <br />
+    git remote add origin https://github.com/upore deya ace link ta <br />
+    git push -u origin main 
+    
+  </body>
+</html>
