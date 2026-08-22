@@ -1,44 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    
+  <head>
     <title>Profile</title>
     <style>
-        table, th, td{
-            border: 1px solid rgb(203, 120, 101);
-            background-color: rgb(89, 73, 119);
-            color: white;
-        }
+      table,
+      th,
+      td {
+        border: 1px solid rgb(203, 120, 101);
+        background-color: rgb(89, 73, 119);
+        color: white;
+      }
 
-        .pf{
-            /* align-items: center; */
-            display: flex;
-            justify-content: center;
-        }
+      .pf {
+        /* align-items: center; */
+        display: flex;
+        justify-content: center;
+      }
 
-        body{
-            background-color: rgb(185, 236, 202);
-        }
+      body {
+        background-color: rgb(185, 236, 202);
+      }
 
-        .info{
-            font-size: 20px;
-            font-family: 'Helvetica';
-        }
+      .info {
+        font-size: 20px;
+        font-family: "Helvetica";
+      }
 
-        .link{
-            color: blue;
-        }
+      .link {
+        color: blue;
+      }
 
-        .link:hover{
-            color: red;
-        }
-
+      .link:hover {
+        color: red;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
-<!-- 
+  <body>
+    <!-- 
     A university wants a webpage to display a student’s profile. The page should contain the 
     student’sphoto, 
     name, 
@@ -50,47 +49,102 @@
     contact information.   
 -->
 
-<h1>student’s Details: </h1>
+    <h1>student’s Details:</h1>
 
+    <div class="pf">
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="student's photo"
+        width="200"
+        height="200"
+      />
+    </div>
 
-<div class = "pf">
-    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="student's photo" width="200" height="200">
-</div>
+    <div>
+      <h2><strong>Introduction: </strong></h2>
 
-<p class = "info">
-    <b>Name: </b> KHalid hasan <br>
-    <b>ID: </b> 23549009015 <br>
-    <b>department: </b> ICT <br>
-    <b>Bio: </b> <br>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Error modi temporibus nesciunt, nisi sequi magni sint eum qui? Quis, nisi.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dicta
+      nesciunt quibusdam perferendis sunt ut veritatis, delectus quis quam nihil
+      expedita consequatur corrupti laboriosam maiores iste minima. Minima,
+      aliquid cupiditate?
+    </div>
 
-</p>
+    <div class="info">
+      <h2>About me:</h2>
+      <b>Name: </b> KHalid hasan <br />
+      <b>ID: </b> 23549009015 <br />
+      <b>department: </b> ICT <br />
+      <b>Bio: </b> <br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+      Error modi temporibus nesciunt, nisi sequi magni sint eum qui? Quis, nisi.
+    </div>
 
-<p>
-    <table>
-        <tr> <th>Level</th> <th>Institution </th> <th>Result </th> </tr>
-        <tr> <td>SSC</td> <td>Dhaka High School</td> <td>GPA 5.00</td> </tr>
-        <tr> <td>HSC</td> <td>Dhaka College</td> <td>GPA 4.90</td> </tr>
-        <tr> <td>BSc</td> <td>Bangladesh University</td> <td>GPA 3.90</td> </tr>
-    </table>
-</p>
+    <div>
+      <h2>Educational Qualifications:</h2>
+      <table>
+        <tr>
+          <th>Level</th>
+          <th>Institution</th>
+          <th>Result</th>
+        </tr>
+        <tr>
+          <td>SSC</td>
+          <td>Dhaka High School</td>
+          <td>GPA 5.00</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>Dhaka College</td>
+          <td>GPA 4.90</td>
+        </tr>
+        <tr>
+          <td>BSc</td>
+          <td>Bangladesh University</td>
+          <td>GPA 3.90</td>
+        </tr>
+      </table>
+    </div>
 
-<p>
-    <b>Skills: </b> 
-    <ul>
+    <div>
+      <h2>Skills:</h2>
+      <ul>
         <li>Python</li>
         <li>Competitive Programming</li>
         <li>C++</li>
-    </ul>
-    
-</p>
+      </ul>
+    </div>
 
-<p>
-    <b>Contact Information: </b> <br>
-    Email: <a class ="link " href="mailto:khalidhasan@gmail.com"> khalid.hasan@example.com </a> <br>
-    FaceBook: <a class="link" href="https://www.facebook.com/khalidhasan">  Khalid Hasan </a> <br>
-    Phone: +8801234567890
-</p>
+    <div>
+      <h2>Projects:</h2>
+      <ul>
+        <li><b>Project 1</b></li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        distinctio fuga nesciunt nulla dolorem fugit. Recusandae labore
+        explicabo quia distinctio?
+        <li><b>Project 1</b></li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        distinctio fuga nesciunt nulla dolorem fugit. Recusandae labore
+        explicabo quia distinctio?
+        <li><b>Project 1</b></li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        distinctio fuga nesciunt nulla dolorem fugit. Recusandae labore
+        explicabo quia distinctio?
+      </ul>
+    </div>
 
-</body>
+    <div>
+      <b>Contact Information: </b> <br />
+      Email:
+      <a class="link" href="mailto:khalidhasan@gmail.com">
+        khalid.hasan@example.com
+      </a>
+      <br />
+      FaceBook:
+      <a class="link" href="https://www.facebook.com/khalidhasan">
+        Khalid Hasan
+      </a>
+      <br />
+      Phone: +8801234567890
+    </div>
+  </body>
 </html>
