@@ -1,35 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            background-color: lightgray;
-            height: 100px;
-        }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        background-color: lightgray;
+        height: 100px;
+      }
 
-        .item1, .item2, .item3, .item4 {
-            background-color: lightblue;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-            border: 1px solid #000;
-        }
+      .item1,
+      .item2,
+      .item3,
+      .item4 {
+        background-color: lightblue;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 10px;
+      }
+
+      nav {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <nav>
+      <a href=""> Homme</a>
+      <a href=""> Femme</a>
+      <a href=""> Enfant</a>
+    </nav>
     <div class="container">
-        <div class="item1">item 1</div>
-        <div class="item2">item 2</div>
-        <div class="item3">item 3</div>
-        <div class="item4">item 4</div>
+      <div class="item1">item 1</div>
+      <div class="item2">item 2</div>
+      <div class="item3">item 3</div>
+      <div class="item4">item 4</div>
     </div>
-</body>
+  </body>
 </html>
