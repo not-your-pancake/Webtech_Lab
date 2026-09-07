@@ -1,0 +1,17 @@
+h1{
+  text-align: center;
+}
+
+img{
+    align-items: center;
+    height: 50px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+header{
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: fleqx;
+    justify-content: center;
+}   
