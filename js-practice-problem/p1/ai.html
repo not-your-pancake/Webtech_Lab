@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+    <style>
+        /* CSS styles target the specific ID */
+        #info {
+            background-color: #f8f9fa;
+            border: 2px solid #333;
+            border-radius: 10px; /* Rounds the corners */
+            padding: 20px;       /* Adds space inside the box */
+            width: 350px;
+            margin: 40px auto;   /* Centers the box on the page */
+            font-family: Arial, sans-serif;
+            line-height: 1.8;    /* Spaces out the text lines */
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The empty HTML container -->
+    <div id="info"></div>
+
+    <script>
+        // Your JavaScript variables
+        let name = "Khalid Hasan";
+        let id = 235423424;
+        let dept = "ICT";
+        let sems = 5;
+        let cgpa = 3.44;
+
+        // Finding the box
+        let display = document.getElementById("info");
+
+        // Pushing the data with <br> tags for clean line breaks
+        display.innerHTML = "<strong>Name:</strong> " + name + 
+                            "<br><strong>ID:</strong> " + id + 
+                            "<br><strong>Dept:</strong> " + dept + 
+                            "<br><strong>Semester:</strong> " + sems + 
+                            "<br><strong>CGPA:</strong> " + cgpa;
+
+        // The logic block
+        if (cgpa >= 3.00) {
+            display.innerHTML += "<br><br><strong>Message:</strong> Good Standing (Above 3.00)";
+        } else {
+            display.innerHTML += "<br><br><strong>Message:</strong> Needs Improvement";
+        }
+    </script>
+
+</body>
+</html>

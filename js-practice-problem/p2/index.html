@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+<style>
+    #calc{
+        border: 1px solid black;
+        text-align: justify;
+        width:300px;
+        height: auto;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <div id="calc"></div>
+
+
+<script>
+    let item1 = "mouse";
+    let item2 = "kwyboard";
+    let item3 = "monitor";
+    
+    let price1 = 1000;
+    let price2 = 2000;
+    let price3 = 3000;
+
+    let mouse_no = 2;
+    let keyboard_no = 3;
+    let monitor_no = 4;
+
+    let total = 0;
+
+    total = (price1 * mouse_no) + (price2 * keyboard_no) + (price3 * monitor_no);
+
+    let display = document.getElementById("calc");
+
+    display.innerHTML = "<strong>Item 1:</strong> " + item1 + " - Price: " + price1 + " - Quantity: " + mouse_no + "<br>" +
+                        "<strong>Item 2:</strong> " + item2 + " - Price: " + price2 + " - Quantity: " + keyboard_no + "<br>" +
+                        "<strong>Item 3:</strong> " + item3 + " - Price: " + price3 + " - Quantity: " + monitor_no;
+    
+    document.getElementById("calc").innerHTML += "<br>Total = " + total;
+
+</script>
+</body>
+
+</html>

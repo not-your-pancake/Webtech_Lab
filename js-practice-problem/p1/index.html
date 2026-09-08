@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+<style>
+    #info{
+        border: 1px solid black;
+        text-align: justify;
+        width:300px;
+        height: auto;
+        padding: 10px;
+    }
+</style>
+
+</head>
+<body>
+    <div id="info">hi akjsdhk hkahs </div>
+
+    <script>
+        let name = "Khalid Hasan";
+        let id = 235423424;
+        let dept = "ICT";
+        let sems = 5;
+        let cgpa = 3.44;
+
+        let display = document.getElementById("info");
+
+        display.innerHTML = "name: " + name + "<br>id: " + id + "<br>dept: " + dept + "<br>semester : " + sems + "<br>cgpa: " + cgpa;
+
+        if (cgpa >= 3.5){
+            document.getElementById("info").innerHTML += "<br>yes its above 3.5";
+        }else{
+            display.innerHTML += "<br>No ";
+        }
+
+    </script>
+</body>
+</html>
