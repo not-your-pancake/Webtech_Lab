@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University student profile</title>
+
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            border: 2px solid ;
+            height: 35px;
+            align-items: center;
+            background-color: antiquewhite;
+            
+        }
+
+        nav a:hover{
+            background-color: aquamarine;
+        }
+
+        /* .profile:hover{
+            
+            display: flex;
+            justify-content: center;
+        } */
+
+        .student{
+            position: relative;
+            
+        }
+
+        .active{
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            border: 1px solid black;
+            font-size: large;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgb(88, 112, 52);
+            color: white;
+        }
+
+        .active:hover{
+            background-color: rgb(231, 77, 77);
+            color: black;
+        }
+
+        .profile{
+            display: flex;
+            justify-content: center;
+        }
+
+        #personal-info{
+            border: 1px solid black;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 
+    Design a student profile
+
+    page that contains a profile picture, 
+
+    student information, 
+
+    academic details, and 
+
+    achievements.
+    
+    -->
+
+    <nav>
+        <a href="#" >Home</a>
+        <a href="#">About</a>
+        <a href="#personal-info">profile</a>
+        <a href="#">Course</a>
+        <a href="#">Result</a>
+        <a href="#">Contact</a>
+    </nav>
+
+
+    <div class="student">
+        <div class="profile">
+        <img src="../../yaboshi-hug.png" alt="profile" height="300px" width="400px"> 
+        </div>
+
+        <div class="active">
+            active
+        </div>
+
+        <div id="personal-info">
+            <h2>Md khalid Monica</h2>
+            <p>Monica</p>
+            <p>Status : active</p>
+            <p> reem binte khalid</p>
+            <p>hind binte khalid</p>
+            <p>hamza bin khalid</p>
+            <p>walid bin khalid </p>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
