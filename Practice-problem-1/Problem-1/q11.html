@@ -13,6 +13,7 @@
             height: 35px;
             align-items: center;
             background-color: antiquewhite;
+            margin-left: 5px;
             
         }
 
@@ -28,6 +29,7 @@
 
         .student{
             position: relative;
+            
             
         }
 
@@ -59,8 +61,33 @@
             align-items: center;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 5px;
+            padding: 10px;
         }
 
+        .float12{
+            float: left;
+            width: 50%;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .side-bar{
+            position:fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;;
+            background-color: lightgray;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .main{
+            margin-left: 200px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -77,7 +104,17 @@
     
     -->
 
-    <nav>
+    <div class="side-bar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#personal-info">profile</a>
+        <a href="#">Course</a>
+        <a href="#">Result</a>
+        <a href="#">Contact</a>
+    </div>
+
+<div class="main">
+     <nav>
         <a href="#" >Home</a>
         <a href="#">About</a>
         <a href="#personal-info">profile</a>
@@ -85,7 +122,6 @@
         <a href="#">Result</a>
         <a href="#">Contact</a>
     </nav>
-
 
     <div class="student">
         <div class="profile">
@@ -105,9 +141,23 @@
             <p>hamza bin khalid</p>
             <p>walid bin khalid </p>
         </div>
+    </div>
 
+    <div class="xyz">
+        
+        <img class="float12" src="../../yaboshi-hug.png" alt="image" height="300px" width="400px">
+        <p>
+        asdfasdfasd fiaoshdfoaiwhdfopawhypoihwyafpoh aopa hspofaopsdi fhaposfhpsh o
+        kjhaksdjfh asjdhfkj kjfhaskfyoery alskdjfhryw0tu jhfkjh oiuroiualsf  aosidruo ijalkjasd fy
+        asopdu aoiudfo oaisdufo iasur97u p- pqweruop aosfu aosi faios foaisufs foasy  faossiu
+         oaidufo oasufop oas ofpiqsofasfoiasos uoias oisa foiasfosa fu.
+
+        </p>
+        
 
     </div>
 
+</div>
+   
 </body>
 </html>
