@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p-9</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="input">
+            <label for="num">Enter a number: </label>
+            <input type="number" id="num">
+        </div>
+
+        <div class="button">
+            <button type="button" id="button" onclick="check()">Check</button>
+        </div>
+
+        <div class="res">
+            <div id="result"></div>
+        </div>
+    </div>
+    <script>
+        function check(){
+            let n = document.getElementById("num").value;
+            if (n < 0 ){
+                document.getElementById("result").innerHTML = "negetive";
+            } else if(n > 0){
+                document.getElementById("result").innerHTML = "positive";
+            }else{
+                document.getElementById("result").innerHTML = "zero";
+            }
+        }
+
+    </script>
+</body>
+</html>
