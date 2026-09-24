@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P7</title>
+</head>
+<body>
+
+    <div class="info">
+        <div class="ssc-div">
+        <label for="ssc">SSC Marks: </label>
+        <input type="number" id="ssc">
+        </div>
+
+        <div class="hsc-div">
+            <label for="hsc">HSC Marks: </label>
+            <input type="number" id="hsc">
+        </div>
+
+        <div class="admission-div">
+            <label for="admission">Admission Marks: </label>
+            <input type="number" id="admission">
+        </div>
+
+        <div class="button">
+            <button type="button" onclick="checkEligibility()" id="check">Check Eligibility</button>
+        </div>
+
+        <div class="display-section">
+            <div id="display"></div>
+        </div>
+    </div>
+    <script>
+        function checkEligibility(){
+            if(document.getElementById("ssc").value >= 3.5 && 
+               document.getElementById("hsc").value >= 3.5 &&
+               document.getElementById("admission").value >= 40)
+             {
+                 document.getElementById("display").innerHTML = "Eligible";
+            }else{
+                 document.getElementById("display").innerHTML = "Not Eligible";
+
+            }
+        }
+    </script>
+</body>
+</html>
