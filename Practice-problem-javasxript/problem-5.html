@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem 5</title>
+    <style>
+        .form{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="info">
+        <label for="name">User name: </label>
+        <input type="text" id="name">
+        </div>
+
+        <div class="info">
+        <label for="pass">Password: </label>
+        <input type="password" id="pass">
+        </div>
+
+        <div class="info">
+        <button type="button" id="login" onclick="checkLogin()">Login</button> 
+        <input type="reset">
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+
+    <script>
+        function checkLogin(){
+            let correctName = "nabil";
+            let correctPassword = "123";
+
+            let enteredName = document.getElementById("name").value;
+            let enteredPass = document.getElementById("pass").value;
+
+            if(correctName == enteredName && correctPassword == enteredPass){
+                document.getElementById("result").innerHTML = "sucessful";
+            }else{
+                document.getElementById("result").innerHTML = "try again";
+            }
+        }
+    </script>
+</body>
+</html>

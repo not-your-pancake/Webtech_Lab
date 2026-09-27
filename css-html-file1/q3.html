@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q3</title>
+
+    <style>
+        form{
+            /* display: grid;
+            grid-template-columns: 1fr;
+            width: 20%; */
+
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        table{
+            border: 1px solid black;
+            /* border: none; */
+            box-shadow: none;
+        }
+        td{
+            border: 1px solid black;
+        }
+
+        .but{
+            display: flex;
+            margin: 10px;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit">
+        <h2>registration</h2>
+        <label for="name">name: </label>
+        <input type="text" id="name" placeholder="full name" >
+
+        <label for="id">ID: </label>
+        <input type="text" id="id" placeholder="id">
+
+        <label for="email">mail: </label>
+        <input type="email" id="email" placeholder="email">
+
+        <label for="pass">Password: </label>
+        <input type="password" id="pass">
+
+        <label for="dob">DOB: </label>
+        <input type="datetime"  id="dob">
+
+        <label >Gender:</label>
+        <table>
+            <tr>
+                <td><label for="gender">Male</label></td>
+                <td><input type="radio" name="male" id="gender"></td>
+            </tr>
+
+            <tr>
+                <td><label for="female"> female</label></td>
+                <td> <input type="radio" name="female" id="gender"></td>
+            </tr>
+        </table>
+        
+        <label for="dept">department: </label>
+        <select name="dept" id="dept">
+            <option value="cse"> CSE </option>
+            <option value="ict">ICT</option>
+            <option value="ES">ES</option>
+        </select>
+
+        <label for="programing">programming skills: </label>
+
+        <label for="option">
+            <input type="checkbox"> C++
+        </label>
+        
+        <label for="option">
+            <input type="checkbox"> python
+        </label>        
+
+        <label for="option">
+            <input type="checkbox"> Rust
+        </label>
+       
+        <div class="but">
+        <button type="submit"> Submit registration</button>
+        <button type="reset">Reset form</button>
+        </div>
+
+    </form>
+
+    <article>
+    <h2>The History of Coffee</h2>
+    <p>Coffee is a brewed drink prepared from roasted coffee beans. It is one of the most popular drinks in the world.</p>
+
+    <!-- The aside provides a related fact, but interrupting the main article -->
+    <aside>
+        <h3>Fun Fact</h3>
+        <p>Finland consumes the most coffee in the world per capita.</p>
+    </aside>
+
+    <p>The earliest credible evidence of coffee-drinking appears in the middle of the 15th century in Yemen...</p>
+</article>
+</body>
+</html>

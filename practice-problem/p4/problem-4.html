@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem 4</title>
+    <style>
+   
+    </style>
+</head>
+<body>
+    <div id="name"></div>
+    <div id="total"></div>
+    <div id="avg"></div>
+    <div id="sub1"></div>
+    <div id="sub2"></div>
+    <div id="sub3"></div>
+    <p> your grade is: </p>
+    <div id="grade"></div>
+
+<script>
+    let name = 'Alex';
+    document.getElementById("name").innerHTML = "name of the student: " + name;
+
+    let sub1 = 85;
+    document.getElementById("sub1").innerHTML = "subject 1 = " + sub1;
+    let sub2 = 78;
+    document.getElementById("sub2").innerHTML = "subject 2 = " + sub2;
+    let sub3 = 92;
+    document.getElementById("sub3").innerHTML = "subject 3 = " + sub3;
+
+    let total = sub1 + sub2 + sub3;
+    document.getElementById("total").innerHTML = "Total marks: " + total;
+
+    let avg = total / 3;
+    document.getElementById("avg").innerHTML = "average = " + avg;
+
+    if(avg >= 80){
+    document.getElementById("grade").innerHTML = "A";
+    } else if( avg >= 70 && avg <=79 ){
+        document.getElementById("grade").innerHTML = "B";
+    } else if( avg >= 50 && avg <=59 ){
+        document.getElementById("grade").innerHTML = "C";
+    } else if( avg >= 40 && avg <=49 ){
+        document.getElementById("grade").innerHTML = "D";
+    } else{
+        document.getElementById("grade").innerHTML = "F";
+    }
+
+</script>
+
+</body>
+</html>
