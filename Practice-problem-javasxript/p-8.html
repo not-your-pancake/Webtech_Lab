@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q8</title>
+</head>
+<body>
+    
+<label for="cgpa">Cgpa: </label>
+<input type="number" id="cgpa">
+
+<label for="attendence">Attendence: </label>
+<input type="number" id="attendence">
+
+<button type="button" onclick="check()">checkEligibility</button>
+
+<div id="result"></div>
+
+    <script>
+
+function check(){
+    let cgpa = document.getElementById("cgpa").value;
+    let attendence = document.getElementById("attendence").value;
+
+
+    if(cgpa >= 3.75 || (cgpa >= 3.50 && attendence >= 90)){
+        document.getElementById("result").innerHTML = "Eligible";
+    }else{
+        document.getElementById("result").innerHTML = "Non Eligible";
+    }
+}
+
+
+
+
+
+
+    </script>
+</body>
+</html>
